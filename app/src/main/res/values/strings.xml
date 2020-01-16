@@ -16,10 +16,10 @@
     <string name="ListadoGranosPh">Trigo 0.72 al 0.80 \nSoja 0.70 al 0.76 \nMaiz 0.72 al 0.80 </string>
     <string name="TipoyPH">Tipo de grano y Ph</string>
     <string name="Ph">Ph del grano</string>
-    <string name="diametro">Conozco diametro (en metros)</string>
+    <string name="diametro">Conozco el diametro (en metros)</string>
     <string name="alturagrano">Conozco la altura del grano (en metros)</string>
-    <string name="cono">Conozco el cono (en metros)</string>
-    <string name="copete">Conozco el copete (en metros)</string>
+    <string name="cono">Conozco la altura del cono (en metros)</string>
+    <string name="copete">Conozco la altura del copete (en metros)</string>
     <string name="toneladas">TONELADAS</string>
     <string name="calcular">CALCULAR</string>
     <string name="negativo">Negativo</string>

@@ -1,31 +1,32 @@
 package com.jpdacruz.appcubicajedireccion.clases;
 
-public class Silo {
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-    private String id;
-    private String tipoGrano;
-    private double phGrano;
-    private double diametro;
-    private double altoGrano;
-    private double cono;
-    private double copete;
-    private double totalm3;
-    private double totaltons;
+@Entity(tableName = "silos")
+public class SiloEntity {
 
-    public Silo() {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
+    public String idSilo;
+    public String tipoGrano;
+    public double phGrano;
+    public double diametro;
+    public double altoGrano;
+    public double cono;
+    public double copete;
+    public double totalm3;
+    public double totaltons;
+
+    public SiloEntity() {
     }
 
-    public Silo(String id,
-                String tipoGrano,
-                double phGrano,
-                double diametro,
-                double altoGrano,
-                double cono,
-                double copete,
-                double totalm3,
-                double totaltons) {
+    public SiloEntity(String idSilo, String tipoGrano,
+                      double phGrano, double diametro,
+                      double altoGrano, double cono, double copete,
+                      double totalm3, double totaltons) {
 
-        this.id = id;
+        this.idSilo = idSilo;
         this.tipoGrano = tipoGrano;
         this.phGrano = phGrano;
         this.diametro = diametro;
@@ -36,12 +37,20 @@ public class Silo {
         this.totaltons = totaltons;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getIdSilo() {
+        return idSilo;
+    }
+
+    public void setIdSilo(String idSilo) {
+        this.idSilo = idSilo;
     }
 
     public String getTipoGrano() {
@@ -110,8 +119,9 @@ public class Silo {
 
     @Override
     public String toString() {
-        return "Silo{" +
-                "id='" + id + '\'' +
+        return "SiloEntity{" +
+                "id=" + id +
+                ", idSilo='" + idSilo + '\'' +
                 ", tipoGrano='" + tipoGrano + '\'' +
                 ", phGrano=" + phGrano +
                 ", diametro=" + diametro +
